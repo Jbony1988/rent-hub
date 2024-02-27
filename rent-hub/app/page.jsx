@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link"
 
 export const metadata = {
   title: "Test"
@@ -6,7 +7,11 @@ export const metadata = {
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <h1 className="text-3xl">Welcome</h1>
+      <Link href="/properties">Show Properties</Link>
+
+    </div>
   )
 }
 
